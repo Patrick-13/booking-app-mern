@@ -29,9 +29,7 @@ const EditHotel = () => {
     mutate(hotelFormData);
   };
 
-  return (
-    <ManageHotelForm hotel={hotel} onSave={handleSave} isLoading={isLoading} />
-  );
+  return <ManageHotelForm onSave={handleSave} isLoading={isLoading} />;
 };
 
 export default EditHotel;
